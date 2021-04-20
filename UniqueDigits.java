@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class UniqueDigits {
 
-       private static int countUniqueDigit(long num) {
+       private static int countDigits(long num) {
 
         int arr[] = new int[10];
         int remainder = 0;
@@ -35,14 +35,14 @@ public class UniqueDigits {
     public static void main(String[] args) {
 
         long num = 0;
-        int uniqueDigit = 0;
+        int digits = 0;
 
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter an Integer number:: ");
         num = scan.nextLong();
-        uniqueDigit = countUniqueDigit(num);
+        digits = countDigits(num);
         
-        System.out.println("Unique digits = "+ uniqueDigit);
+        System.out.println("Unique digits = "+ digits);
 
         scan.close();
     }
